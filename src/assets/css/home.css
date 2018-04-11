@@ -1,0 +1,52 @@
+.home-header{
+  width: 80%;
+  margin: 20px auto;
+}
+
+.home-header .logoWrap span{
+  display: inline-block;
+  width:120px;
+  heith:60px;
+  line-height: 60px;
+  font-size:20px;
+  font-family: 文鼎火柴体;
+}
+
+.home-header .logoWrap img{
+  height:60px;
+  vertical-align: top;
+}
+
+.content{
+  padding: 40px;
+}
+
+.mainbtn{
+  margin-right:20px;
+}
+
+
+
+.loginWrap{cursor:pointer;border:1px solid #ccc;border-radius: 10px;overflow: hidden}
+.loginWrap:hover{border-color: #1CCC8E;}
+.loginWrap span:hover{background:#1ccc8E;color:#fff;}
+.loginWrap img{
+  width: 35px;
+  height:35px;
+  border-radius: 50%;
+  border:3px solid #fff;
+  vertical-align: middle;
+  margin-left:10px;
+}
+
+.loginWrap span{
+  display: inline-block;
+  padding:10px 20px;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.btnWrap{
+  margin-top:40px;
+}
+
