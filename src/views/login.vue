@@ -26,10 +26,10 @@
         this.$local_sf.save('vueRouter_p1', {
           islogin: true,
           useName: useName
-        })
-        this.$router.push({
-          path: '/'
-        })
+        });
+
+//      1.最简单的回退，向后退一步
+        this.$router.go(-1);
       }
     }
   }
