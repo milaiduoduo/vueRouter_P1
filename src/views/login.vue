@@ -24,7 +24,7 @@
       sendLogin(){
         let useName = this.$refs.userName.value;
         this.$local_sf.save('vueRouter_p1', {
-          login: true,
+          islogin: true,
           useName: useName
         })
         this.$router.push({
