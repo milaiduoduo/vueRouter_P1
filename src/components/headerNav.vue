@@ -5,8 +5,8 @@
         <img class="nav_logo" src="../assets/logo.png" alt="">
       </router-link>
       <router-link class="headerItem" tag="li" to="/project">我的项目</router-link>
-      <router-link class="headerItem" tag="li" to="/project">我的工作台</router-link>
-      <router-link class="headerItem" tag="li" to="/project">我的文档</router-link>
+      <router-link class="headerItem" tag="li" to="/workbench">我的工作台</router-link>
+      <router-link class="headerItem" tag="li" to="/doc">我的文档</router-link>
     </ul>
     <login-out class="loginOutP"></login-out>
   </div>
