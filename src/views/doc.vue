@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是文档组件
+    <h1>我是文档组件</h1>
   </div>
 </template>
 <script type='text/ecmascript-6'>

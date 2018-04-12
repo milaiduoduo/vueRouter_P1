@@ -1,0 +1,9 @@
+.breadcrumb{
+  height:40px;
+  line-height: 40px;
+  background:#eff2f7;
+  text-align: left;
+  padding-left:30px;
+}
+
+.breadcrumb span{cursor: pointer;}

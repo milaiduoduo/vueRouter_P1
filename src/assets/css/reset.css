@@ -2,8 +2,10 @@ html,body{
   width:100%;
   height:100%;
   font-family: 'Microsoft YaHei UI';
+  font-size:14px;
   padding:0px;
   margin:0px;
+
 }
 
 .clear:after{
@@ -20,8 +22,8 @@ html,body{
   float:right;
 }
 
-ul{list-style:none;margin: 0px;}
-
+ul{list-style:none;margin: 0px;padding: 0px;}
+a{text-decoration: none;}
 #app{margin-top:0px!important;}
 
 .mainbtn{

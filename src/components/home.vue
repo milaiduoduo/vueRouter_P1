@@ -5,10 +5,11 @@
         <img class="nav_logo" src="../assets/logo.png" alt="">
         <span>vue-router</span>
       </div>
-      <div class="loginWrap right">
-        <router-link v-if="!isLogin" to="/login" tag="span">登录</router-link>
-        <img v-if="isLogin" src="../assets/portrait.png" alt="">
-      </div>
+      <login-out></login-out>
+      <!--<div class="loginWrap right">-->
+        <!--<router-link v-if="!isLogin" to="/login" tag="span">登录</router-link>-->
+        <!--<img v-if="isLogin" src="../assets/portrait.png" alt="">-->
+      <!--</div>-->
     </div>
     <div class="content">
       <h1>这是一个Vue-Router学习案例！！</h1>
@@ -22,12 +23,16 @@
   </div>
 </template>
 <script type='text/ecmascript-6'>
+  import loginOut from './loginOut';
   export default{
     name: 'home',
     data(){
       return {
         isLogin: false
       }
+    },
+    components: {
+      loginOut
     }
   }
 </script>

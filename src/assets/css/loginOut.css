@@ -1,0 +1,29 @@
+.loginWrap{position:relative;cursor:pointer;border:1px solid #ccc;border-radius: 10px;overflow: hidden}
+.loginWrap:hover{border-color: #1CCC8E;}
+.loginWrap span:hover{background:#1ccc8E;color:#fff;}
+.loginWrap img{
+  width: 35px;
+  height:35px;
+  border-radius: 50%;
+  border:3px solid #fff;
+  vertical-align: middle;
+  margin:0px 10px;
+}
+
+.loginWrap span{
+  display: inline-block;
+  padding:10px 20px;
+  font-size:16px;
+  font-weight: bold;
+}
+
+.loginWrap .loginOut{
+  width: 100%;
+  height:40px;
+  line-height: 40px;
+  background:#ccc;
+  color:#fff;
+}
+.loginWrap .loginOut:hover{
+  background:#1ccc8E;
+}
