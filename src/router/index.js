@@ -60,18 +60,27 @@ let router = new Router({
 // 实现功能：拦截必须登录才能看的url，经过判断登录后的才能进入，未登录则跳到登录页。
 router.beforeEach((to, from, next) => {
   // to.matched 取到的是url匹配出来的组件和它的父组件obj
-  let flag = to.matched.some((item) => item.meta.needLogin)
-  console.log('to: ', to)
-  console.log('是否登录后才能使用：', flag)
-  if (flag) {
+  let needLoginFlag = to.matched.some((item) => item.meta.needLogin)
+  // console.log('to: ', to)
+  // console.log('是否登录后才能使用：', flag)
+  if (needLoginFlag) {
     // router.app 取到的是当前vue实例
     let info = router.app.$local_sf.fetch('vueRouter_p1')
     if (info.islogin) {
+      console.log('已经登录过了！')
       next()
     } else {
-      router.push({path: '/login'})
+      console.log('还没有登录！！！')
+      router.push({
+        path: '/login',
+        query: { // 用query记录之前的这个页面
+          redirect: to.path.slice(1)
+        }
+      })
     }
   } else {
+    // console.log('不需要验证！！！')
+    // console.log('to:::', to, 'form:::', from)
     next()
   }
 })
