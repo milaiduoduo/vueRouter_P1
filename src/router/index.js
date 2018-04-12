@@ -66,7 +66,7 @@ router.beforeEach((to, from, next) => {
   if (flag) {
     // router.app 取到的是当前vue实例
     let info = router.app.$local_sf.fetch('vueRouter_p1')
-    if (info.login) {
+    if (info.islogin) {
       next()
     } else {
       router.push({path: '/login'})
