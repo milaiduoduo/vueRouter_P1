@@ -1,0 +1,27 @@
+
+.headerNav {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  line-height: 80px;
+}
+
+.headerNav .headerItem {
+  float: left;
+  padding: 0px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius:1px;
+}
+
+.headerNav .headerItem:first-child:hover {
+  background:transparent;
+}
+
+.headerNav .headerItem:hover {
+  background:#1ccc8E;
+  color:#fff;
+}
+
+.headerNav .headerItem > img {
+  vertical-align: middle;
+}

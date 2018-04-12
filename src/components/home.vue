@@ -2,7 +2,7 @@
   <div class="main">
     <div class="home-header clear">
       <div class="logoWrap left">
-        <img src="../assets/logo.png" alt="">
+        <img class="nav_logo" src="../assets/logo.png" alt="">
         <span>vue-router</span>
       </div>
       <div class="loginWrap right">

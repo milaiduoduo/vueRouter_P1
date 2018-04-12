@@ -12,7 +12,7 @@
   font-family: 文鼎火柴体;
 }
 
-.home-header .logoWrap img{
+.home-header .logoWrap img,.nav_logo{
   height:60px;
   vertical-align: top;
 }
