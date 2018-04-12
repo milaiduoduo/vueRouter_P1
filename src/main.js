@@ -6,7 +6,11 @@ import router from './router'
 
 import './assets/css/app.css'
 
+// 引入自定义工具插件
+import Utile from './lib/utils';
+
 Vue.config.productionTip = false
+Vue.use(Utile);
 
 /* eslint-disable no-new */
 new Vue({

@@ -1,9 +1,9 @@
 <template>
   <div class="loginWrap">
     <h1>登录</h1>
-    <form action="">
+    <form @submit.prevent='sendLogin'>
       <div class="itemWrap">
-        <input class="item" type="text" name="user" placeholder="请输入用户名">
+        <input class="item" type="text" name="user" placeholder="请输入用户名" ref="userName">
       </div>
       <div class="itemWrap">
         <input class="item" type="text" name="user" placeholder="请输入密码">
@@ -18,7 +18,21 @@
   </div>
 </template>
 <script type='text/ecmascript-6'>
-
+  export default{
+    name: 'login',
+    methods: {
+      sendLogin(){
+        let useName = this.$refs.userName.value;
+        this.$local_sf.save('vueRouter_p1', {
+          login: true,
+          useName: useName
+        })
+        this.$router.push({
+          path: '/'
+        })
+      }
+    }
+  }
 </script>
 <style>
 
