@@ -4,7 +4,7 @@
     <img v-if="isLogin" src="../assets/portrait.png" alt="">
     <div v-if="isLogin" class="loginOut">
       <ul>
-        <router-link tag="li" to="/login">登出</router-link>
+        <li @click="loginOut">登出</li>
       </ul>
     </div>
   </div>
@@ -22,6 +22,11 @@
       getLoginFlag(){
         this.isLogin = this.$local_sf.fetch('vueRouter_p1').islogin;
 //        console.log('isLogin:', this.$local_sf.fetch('vueRouter_p1'));
+      },
+      loginOut(){
+        this.$local_sf.save('vueRouter_p1', {});
+        this.isLogin = false;
+//        this.$router.push({path: '/login'});
       }
     }
   }
