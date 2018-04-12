@@ -24,6 +24,8 @@ html,body{
 
 ul{list-style:none;margin: 0px;padding: 0px;}
 a{text-decoration: none;}
+input{outline: none;}
+input[type='submit']{border: none;}
 #app{margin-top:0px!important;}
 
 .mainbtn{

@@ -1,7 +1,7 @@
-.loginWrap{position:relative;cursor:pointer;border:1px solid #ccc;border-radius: 10px;overflow: hidden}
-.loginWrap:hover{border-color: #1CCC8E;}
-.loginWrap span:hover{background:#1ccc8E;color:#fff;}
-.loginWrap img{
+.loginOutWrap{position:relative;cursor:pointer;border:1px solid #ccc;border-radius: 10px;overflow: hidden}
+.loginOutWrap:hover{border-color: #1CCC8E;}
+.loginOutWrap span:hover{background:#1ccc8E;color:#fff;}
+.loginOutWrap img{
   width: 35px;
   height:35px;
   border-radius: 50%;
@@ -10,20 +10,20 @@
   margin:0px 10px;
 }
 
-.loginWrap span{
+.loginOutWrap span{
   display: inline-block;
   padding:10px 20px;
   font-size:16px;
   font-weight: bold;
 }
 
-.loginWrap .loginOut{
+.loginOutWrap .loginOut{
   width: 100%;
   height:40px;
   line-height: 40px;
   background:#ccc;
   color:#fff;
 }
-.loginWrap .loginOut:hover{
+.loginOutWrap .loginOut:hover{
   background:#1ccc8E;
 }

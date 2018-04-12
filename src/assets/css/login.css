@@ -1,0 +1,32 @@
+.loginWrap{
+  width: 400px;
+  margin:0 auto;
+}
+
+.loginWrap form{display: block;}
+
+.loginWrap .itemWrap{width: 400px;}
+
+.loginWrap form .item{
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.loginWrap form .btn{
+  color:#fff;
+  background:#4fc08d;
+  cursor:pointer;
+}
+
+.loginWrap form .btn:hover{
+  background:#1ccc8E;
+}
+
+.loginWrap .itemWrap .linkTo{
+  cursor:pointer;
+}
+
+

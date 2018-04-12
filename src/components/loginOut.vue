@@ -1,10 +1,10 @@
 <template>
-    <div class="loginWrap right">
+    <div class="loginOutWrap right">
       <router-link v-if="!isLogin" to="/login" tag="span">登录</router-link>
       <img v-if="isLogin" src="../assets/portrait.png" alt="">
       <div v-if="isLogin" class="loginOut">
         <ul>
-          <li>登出</li>
+          <router-link tag="li" to="/login">登出</router-link>
         </ul>
       </div>
     </div>
